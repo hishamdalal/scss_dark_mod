@@ -10,3 +10,4 @@
 - automatic generate var(--color) and fallback #hex-color.
 - color-replace function to generate any color in any css properties.
 
+![Screenshot](screenshot.jpg)
