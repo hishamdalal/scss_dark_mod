@@ -1,4 +1,4 @@
-# scss theme with dark mod
+# scss theme with dark mode
 
 ## features
 - Custom light colors & dark colors.
