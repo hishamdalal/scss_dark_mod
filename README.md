@@ -8,6 +8,6 @@
 - color-scheme.
 - color & background-color function & mixin.
 - automatic generate var(--color) and fallback #hex-color.
-- color-replace function to generate any color in any css properties.
+- color-replace function to generate any var(--color) in any css properties.
 
 ![Screenshot](screenshot.jpg)
