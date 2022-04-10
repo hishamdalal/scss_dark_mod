@@ -1,0 +1,33 @@
+@import './colors';
+
+body {
+    font-size: 20px;
+    @include bg-colors(lighten);
+    @include colors(darken);
+}
+
+.theme-mode-toggle {
+    @include bg-colors(darken);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    padding: .2rem;
+    border-radius: 50%;
+}
+
+.container {
+    header{
+        @include bg-colors(accent);
+        @include color-replace(border, '1px solid $', (accent));
+        padding: .2rem 1rem;
+    }
+    
+    .title {
+        @include colors(lighten);
+        @include color-replace(text-shadow, '1px 1px 3px $', (darken));
+        @include color-replace(border-bottom, '1px solid $', (secondary));
+        font-size: 4rem;
+    }
+}
