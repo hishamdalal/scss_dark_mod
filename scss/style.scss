@@ -1,9 +1,21 @@
 @import './colors';
 
 body {
-    font-size: 20px;
     @include bg-colors(lighten);
     @include colors(darken);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
 }
 
 .theme-mode-toggle {
@@ -15,19 +27,29 @@ body {
     width: 2rem;
     padding: .2rem;
     border-radius: 50%;
+    cursor: pointer;
 }
 
-.container {
-    header{
-        @include bg-colors(accent);
-        @include color-replace(border, '1px solid $', (accent));
-        padding: .2rem 1rem;
-    }
+.banner{
+    @include bg-colors(accent);
+    @include color-replace(border, '1px solid $', (accent));
+    display: flex;
+    align-items: center;
+    height: 12rem;
+    padding: .2rem 2rem;
     
     .title {
         @include colors(lighten);
         @include color-replace(text-shadow, '1px 1px 3px $', (darken));
-        @include color-replace(border-bottom, '1px solid $', (secondary));
         font-size: 4rem;
+    }
+}
+
+.container {
+    padding: 1rem 2rem;
+    
+    .title {
+        @include colors(primary);
+        @include color-replace(border-bottom, '2px solid $', (primary));
     }
 }
