@@ -13,5 +13,5 @@
 
 
 ## Resources:
-https://github.com/coding-in-public/light-dark
-https://www.ditdot.hr/en/dark-mode-website-tutorial
+- https://github.com/coding-in-public/light-dark
+- https://www.ditdot.hr/en/dark-mode-website-tutorial
